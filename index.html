@@ -1,79 +1,258 @@
-<nav class="navbar">
-    <div class="nav-content">
-        <a href="#" class="logo">SB</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahyad Barzani - Social Media Observer & Content Writer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #ffffff;
+            --accent-color: #dbeafe;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--bg-color);
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 6rem auto 2rem;
+            padding: 0 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: var(--accent-color);
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--accent-color);
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <h1>Shahyad Barzani</h1>
+            <p>Social Media Observer & Content Writer at RENWS</p>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="card">
+                <h3>Background</h3>
+                <p>Born on August 8, 2004, I'm currently pursuing Computer Science at Lebanese French University (Stage 2).</p>
+            </div>
+            <div class="card">
+                <h3>Interests</h3>
+                <p>Passionate about technology, global news, and media. Always seeking new challenges and opportunities to grow.</p>
+            </div>
+        </section>
+
+        <section id="work" class="section">
+            <h2>Work Experience</h2>
+            <div class="card">
+                <h3>Social Media Observer & Content Writer</h3>
+                <p>RENWS</p>
+                <p>Currently working at KSM as a social media observer and writing daily news for RENWS. Responsible for monitoring trends and creating engaging content.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <div class="card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:shahyadbarzani88@gmail.com">shahyadbarzani88@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:0750713134">0750 713 1348</a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+        </section>
     </div>
-</nav>
 
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Shahyad Barzani</h1>
-        <p>Social Media Observer & Content Writer at RENWS</p>
-        <a href="#contact" class="btn">Get in Touch</a>
-    </div>
-</section>
+    <footer>
+        <p>© 2025 Shahyad Barzani. All rights reserved.</p>
+    </footer>
 
-<section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-grid">
-        <div class="about-card">
-            <h3>Background</h3>
-            <p>Born on August 8, 2004, I'm currently pursuing  Computer Science and Engineering  at Lebanese French University (Stage 2).</p>
-        </div>
-        <div class="about-card">
-            <h3>Interests</h3>
-            <p>Passionate about technology, global news, and media. Always seeking new challenges and opportunities to grow.</p>
-        </div>
-    </div>
-</section>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-<section id="work" class="section">
-    <h2 class="section-title">Work Experience</h2>
-    <div class="work-experience">
-        <h3>Social Media Observer & Content Writer</h3>
-        <p>RENWS</p>
-        <p>Currently working at KSM as a social media observer and writing daily news for RENWS. Responsible for monitoring trends and creating engaging content.</p>
-    </div>
-</section>
+        // Navbar background color change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                navbar.style.backgroundColor = 'var(--bg-color)';
+            }
+        });
 
-<section id="contact" class="section">
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="social-grid">
-        <div class="social-card">
-            <i class="fab fa-twitter social-icon"></i>
-            <a href="https://x.com/shahyadtatar" target="_blank" class="social-link">Twitter/X</a>
-        </div>
-        <div class="social-card">
-            <i class="fab fa-instagram social-icon"></i>
-            <a href="https://www.instagram.com/shahyad_barzani88" target="_blank" class="social-link">Instagram</a>
-        </div>
-        <div class="social-card">
-            <i class="fab fa-snapchat social-icon"></i>
-            <a href="https://snapchat.com/t/aLTek9Ev" target="_blank" class="social-link">Snapchat</a>
-        </div>
-    </div>
+        // Add animation to cards when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
 
-    <div class="contact-form">
-        <div class="form-group">
-            <label for="email">Email</label>
-            <a href="mailto:shahyadbarzani88@gmail.com">shahyadbarzani88@gmail.com</a>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone</label>
-            <a href="tel:+9647507131348">0750 713 1348</a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Shahyad Barzani. All rights reserved.</p>
-</footer>
-
-<div class="scroll-top">
-    <i class="fas fa-arrow-up"></i>
-</div>
+        document.querySelectorAll('.card').forEach((card) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
